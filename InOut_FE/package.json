@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
     "@tanstack/react-query": "^5.86.0",
     "@tanstack/react-query-devtools": "^5.86.0",
     "axios": "^1.11.0",
