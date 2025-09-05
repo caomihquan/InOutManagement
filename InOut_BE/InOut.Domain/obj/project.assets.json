@@ -33,8 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Telerik Collection for .NET 2025 Q1 (full set of .nupkg packages)": {},
-        "\\\\172.16.7.34\\Public\\ERMCore\\Release": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
