@@ -12,7 +12,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@local.test
+      PGADMIN_DEFAULT_EMAIL: cmquan0512@outlook.com
       PGADMIN_DEFAULT_PASSWORD: admin123
     ports: ["5050:80"]
 volumes:

@@ -1,0 +1,16 @@
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\bin\Debug\net9.0\InOut.Infrastructure.deps.json
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\bin\Debug\net9.0\InOut.Infrastructure.dll
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\bin\Debug\net9.0\InOut.Infrastructure.pdb
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\bin\Debug\net9.0\InOut.Domain.dll
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\bin\Debug\net9.0\InOut.Domain.pdb
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.csproj.AssemblyReference.cache
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.AssemblyInfoInputs.cache
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.AssemblyInfo.cs
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.sourcelink.json
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.In.A26C72D7.Up2Date
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.dll
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\refint\InOut.Infrastructure.dll
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\InOut.Infrastructure.pdb
+D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Infrastructure\obj\Debug\net9.0\ref\InOut.Infrastructure.dll
