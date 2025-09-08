@@ -8,15 +8,12 @@ const api = axios.create({
 
 api.interceptors.request.use((config) => {
   const token = getAccessToken()
-  if (token && config.headers) {
-    config.headers['Authorization'] = `Bearer ${token}`
-  }
+  if (token && config.headers) config.headers['Authorization'] = `Bearer ${token}`
   return config
 })
 
-type FailedReq = { resolve: (value?: any) => void; reject: (err?: any) => void }
 let isRefreshing = false
-let failedQueue: FailedReq[] = []
+let failedQueue: Array<{ resolve: (v?: any) => void; reject: (e?: any) => void }> = []
 
 const processQueue = (error: any, token: string | null = null) => {
   failedQueue.forEach(p => (error ? p.reject(error) : p.resolve(token)))
@@ -36,10 +33,11 @@ api.interceptors.response.use(
           return api(originalRequest)
         })
       }
+
       originalRequest._retry = true
       isRefreshing = true
       try {
-        const r = await api.post('/api/auth/refresh', null) // refresh using cookie
+        const r = await api.post('/api/auth/refresh', null)
         const newToken = r.data?.accessToken
         setAccessToken(newToken ?? null)
         processQueue(null, newToken ?? null)
@@ -48,9 +46,7 @@ api.interceptors.response.use(
       } catch (e) {
         processQueue(e, null)
         return Promise.reject(e)
-      } finally {
-        isRefreshing = false
-      }
+      } finally { isRefreshing = false }
     }
     return Promise.reject(err)
   }

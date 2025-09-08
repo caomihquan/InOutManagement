@@ -16,6 +16,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<WorkAssignment> WorkAssignments => Set<WorkAssignment>();
     public DbSet<Visitor> Visitors => Set<Visitor>();
     public DbSet<VisitorPass> VisitorPasses => Set<VisitorPass>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {

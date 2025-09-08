@@ -1,16 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import api from '../api/axios'
-import { setAccessToken, getAccessToken } from './tokenStore'
+import { setAccessToken } from './tokenStore'
 
-type User = { id: string; userName: string; email?: string; roles?: string[] | null }
-
-type AuthCtx = {
-  user: User | null
-  login: (userName: string, password: string) => Promise<void>
-  logout: () => Promise<void>
-  refresh: () => Promise<string | null>
-  getAccessToken: () => string | null
-}
+type User = { id: string; userName: string; email?: string; roles?: string[] }
+type AuthCtx = { user: User | null; login: (userName: string, password: string) => Promise<void>; logout: () => Promise<void> }
 
 const AuthContext = createContext<AuthCtx | undefined>(undefined)
 
@@ -18,11 +11,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [user, setUser] = useState<User | null>(null)
 
   const login = async (userName: string, password: string) => {
-    const res = await api.post('/api/auth/login', { userName, password })
-    const token = res.data?.accessToken ?? null
-    const u = res.data?.user ?? null
+    const r = await api.post('/api/auth/login', { userName, password })
+    const token = r.data?.accessToken ?? null
     setAccessToken(token)
-    setUser(u)
+    setUser(r.data?.user ?? null)
   }
 
   const logout = async () => {
@@ -31,35 +23,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setUser(null)
   }
 
-  const refresh = async () => {
-    const r = await api.post('/api/auth/refresh', null)
-    const newToken = r.data?.accessToken ?? null
-    setAccessToken(newToken)
-    return newToken
-  }
-
-  // Try to fetch current user on start (backend may use refresh cookie to issue access token)
   useEffect(() => {
     (async () => {
       try {
-        // Option A: call /api/auth/me which may return user if refresh cookie exists
         const r = await api.get('/api/auth/me')
         setUser(r.data)
-      } catch {
-        // no-op
-      }
+      } catch { /* not logged */ }
     })()
   }, [])
 
-  return (
-    <AuthContext.Provider value={{ user, login, logout, refresh, getAccessToken }}>
-      {children}
-    </AuthContext.Provider>
-  )
+  return <AuthContext.Provider value={{ user, login, logout }}>{children}</AuthContext.Provider>
 }
 
-export const useAuth = () => {
-  const ctx = useContext(AuthContext)
-  if (!ctx) throw new Error('useAuth must be used inside AuthProvider')
-  return ctx
-}
+export const useAuth = () => { const c = useContext(AuthContext); if (!c) throw new Error('useAuth must be inside AuthProvider'); return c }
