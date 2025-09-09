@@ -10,3 +10,15 @@ D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InO
 D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\refint\InOut.Domain.dll
 D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.pdb
 D:\Project\.NET\Inout\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\ref\InOut.Domain.dll
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\bin\Debug\net9.0\InOut.Domain.deps.json
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\bin\Debug\net9.0\InOut.Domain.dll
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\bin\Debug\net9.0\InOut.Domain.pdb
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.AssemblyInfoInputs.cache
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.AssemblyInfo.cs
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.csproj.CoreCompileInputs.cache
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.sourcelink.json
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.dll
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\refint\InOut.Domain.dll
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\InOut.Domain.pdb
+D:\Document\Project\InOutManagement\InOut_BE\InOut.Domain\obj\Debug\net9.0\ref\InOut.Domain.dll
