@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\caomi\\.nuget\\packages\\": {},
+    "C:\\Users\\cmquan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\.NET\\Inout\\InOutManagement\\InOut_BE\\InOut.Domain\\InOut.Domain.csproj",
+      "projectUniqueName": "D:\\Document\\Project\\InOutManagement\\InOut_BE\\InOut.Domain\\InOut.Domain.csproj",
       "projectName": "InOut.Domain",
-      "projectPath": "D:\\Project\\.NET\\Inout\\InOutManagement\\InOut_BE\\InOut.Domain\\InOut.Domain.csproj",
-      "packagesPath": "C:\\Users\\caomi\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\.NET\\Inout\\InOutManagement\\InOut_BE\\InOut.Domain\\obj\\",
+      "projectPath": "D:\\Document\\Project\\InOutManagement\\InOut_BE\\InOut.Domain\\InOut.Domain.csproj",
+      "packagesPath": "C:\\Users\\cmquan\\.nuget\\packages\\",
+      "outputPath": "D:\\Document\\Project\\InOutManagement\\InOut_BE\\InOut.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\caomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cmquan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -73,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
